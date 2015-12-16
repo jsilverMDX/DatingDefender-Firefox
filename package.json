@@ -1,0 +1,19 @@
+{
+  "title": "DatingDefender",
+  "name": "datingdefender2",
+  "version": "2.2.0",
+  "description": "Anti-scam software for OkCupid.",
+  "main": "index.js",
+  "author": "op2600",
+  "icon": "resource://datingdefender2/data/DatingD-Icon48.png",
+  "engines": {
+    "firefox": ">=38.0a1",
+    "fennec": ">=38.0a1"
+  },
+  "license": "UNLICENSED",
+  "keywords": [
+    "dating",
+    "defender",
+    "okcupid"
+  ]
+}
