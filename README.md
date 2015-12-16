@@ -1,4 +1,4 @@
-DatingDefender 2.2 for Chrome
+DatingDefender 2.2 for Firefox 
 
 http://op2600.com
 
