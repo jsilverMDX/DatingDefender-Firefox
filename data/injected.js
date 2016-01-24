@@ -1,6 +1,8 @@
-console.log("Loading DatingDefender...");
+VERSION = "2.4"
 
-warning = function(warning, im) {
+console.log("Loading DatingDefender " + VERSION + "...");
+
+function warning(warning, im) {
   // console.log(warning);
   //  put it in the IM
   var messages = document.getElementsByClassName('messages show');
@@ -107,7 +109,8 @@ function check_picture_amounts() {
     // we stopped using this method. OKCupid changed their site.
     // user_name = document.querySelector("div[class*='basics-username']");
     // user_name = (user_name.innerText || user_name.textContent).trim()
-    amount = document.querySelectorAll("img[src*='225x225']").length; // there will always be two profile pictures.
+    amount = document.querySelectorAll("img[data-albumid*='0']").length - 1; // there will always be two profile pictures.
+    console.log("User supposedly has " + amount + " pictures in first album");
     if(amount == 1) {
       warning("User has only added one photo. Possible scam profile.", false)
     }
@@ -125,7 +128,7 @@ function check_name() {
   }
 }
 
-console.log("DatingDefender 2.2 initialized");
+console.log("DatingDefender " + VERSION + " initialized");
 
 check_for_bullshit();
 
